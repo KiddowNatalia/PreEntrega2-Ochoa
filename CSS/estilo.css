@@ -1,0 +1,18 @@
+.background{
+    background-color: #CA4A65;
+}
+
+.miBtn{
+    background-color: #F8BF68;
+}
+.logoCinefilos{
+    height: 48px;
+}
+.widthInput{
+    width: 32rem;
+}
+@media (max-width:768px){
+    .widthInput{
+        width: 1rem;
+    }
+}
