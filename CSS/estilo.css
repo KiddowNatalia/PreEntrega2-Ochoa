@@ -5,6 +5,9 @@
 .miBtn{
     background-color: #F8BF68;
 }
+.miBtn:hover{
+    background-color: #F7B147;
+}
 .logoCinefilos{
     height: 48px;
 }
@@ -15,4 +18,53 @@
     .widthInput{
         width: 1rem;
     }
+}
+.birrete{
+    width: 50px;
+    border-radius: 5px;
+    background-color: none;
+    cursor: pointer;
+}
+.birrete:hover{
+    width: 55px;
+    background-color: #F7B147;
+}
+.colorText{
+    color: #fafafa;
+}
+.heightPoster{
+    height: 600px;
+    width: 100%;
+    margin: 0;
+}
+.carousel-caption{
+    right: 66%;
+}
+.carousel-indicators{
+    margin: auto;
+}
+.carousel-item{
+    width: fit-content;
+    margin: 0;
+}
+.carousel-inner{
+    margin-top: 30px;
+    margin-left: 30%;
+    position: inherit;
+    width: fit-content;
+}
+.carousel-control-next  {
+    margin-right: 0;
+    opacity: 100;
+    justify-content: end;
+    height: 600px;
+}
+.carousel-control-prev{
+    left: 0%;
+    opacity: 100;
+    justify-content: start;
+    height: 600px;
+}
+section{
+    justify-content: center;
 }

@@ -3,70 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cinéfilos comentan</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="logo-mini1.png" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/estilo.css" />
   </head>
-  <body>
+  <body class="grid-contenedor-padre">
     <!-- Nav bar -->
     <header>
-       
-        <div class="px-3 py-2 background border-bottom ">
-          <div >
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <img class="logoCinefilos" src="Logo-280x120.png" alt="logo De Cinefilos Comentan">
-              </a>
-              <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-                <input type="search" class="form-control widthInput" placeholder="Search..." aria-label="Search">
-              </form>
-      
-    
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li class="nav-item">
-                  <a href="#" class="nav-link disabled d-flex align-items-center">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="0"><use xlink:href="#home"/></svg>
-                    Inicio
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-white d-flex align-items-center">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="0"><use xlink:href="#speedometer2"/></svg>
-                    Series y películas
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link disabled d-flex align-items-center">
-                    <svg class="bi d-block mx-auto mb-1 " width="24" height="0"><use xlink:href="#grid"/></svg>
-                    Favoritos
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link disabled d-flex align-items-center">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="0"><use xlink:href="#people-circle"/></svg>
-                    Mis reseñas
-                  </a>
-                </li>
-                <div class="text-end">
-                    <button type="button" class="btn btn-light text-dark me-2 ">Login</button>
-                    <button type="button" class="btn miBtn">Sign-up</button>
-                  </div>
-              </ul>
+      <div class="px-3 py-2 background border-bottom">
+        <div>
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+            >
+              <img
+                class="logoCinefilos"
+                src="Logo-280x120.png"
+                alt="logo De Cinefilos Comentan"
+              />
+            </a>
+            <img
+              class="birrete"
+              src="Birrete-removebg-preview (1).png"
+              alt="Birrete estudiantes"
+            />
+            <form
+              class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto ps-3"
+              role="search"
+            >
+              <input
+                type="search"
+                class="form-control widthInput"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            >
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link d-flex colorText align-items-center"
+                >
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="0">
+                    <use xlink:href="#home" />
+                  </svg>
+                  <strong>Inicio</strong>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-white d-flex align-items-center"
+                >
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="0">
+                    <use xlink:href="#speedometer2" />
+                  </svg>
+                  Series y películas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled d-flex align-items-center">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="0">
+                    <use xlink:href="#grid" />
+                  </svg>
+                  Favoritos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled d-flex align-items-center">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="0">
+                    <use xlink:href="#people-circle" />
+                  </svg>
+                  Perfil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled d-flex align-items-center">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="0">
+                    <use xlink:href="#people-circle" />
+                  </svg>
+                  Amigos
+                </a>
+              </li>
+              <div class="text-end">
+                <button type="button" class="btn btn-light text-dark me-2">
+                  Iniciar sesion
+                </button>
+                <button type="button" class="btn miBtn">Suscribite</button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Nav bar -->
+    <!-- Carroussel -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+          <div class="carousel-item active justify-content-end">
+            <img src="poster.jpg" class="d-block heightPoster" alt="..." />
+            
+            <div class="carousel-inner">
+              <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-caption d-none d-md-block align-items-start">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
-
-      </header>
-      <!-- Nav bar -->
-
-
-
-
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
