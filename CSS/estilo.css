@@ -194,6 +194,12 @@ textarea{
     justify-content: center;
     flex-wrap: wrap;
 }
+.tercerFilaPosters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .posters{
     height: 500px;
@@ -204,18 +210,21 @@ textarea{
     width: 370px;
     height: 540px;
 }
+.descripcionPeli{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 @media (min-width:0px) and (max-width:1200px) {
     .posters{
-        height: 250px;
-        width: 175px;
-    }
-    .posters:hover{
-        height: 290px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
     }
     .posterPelicula{
-        width: 400px;
+        width: 105px;
         padding: 20px;
+    }
+    .descripcionPeli{
+        display: none;
     }
 }
 /* FOOTER */
@@ -306,7 +315,7 @@ a{
         justify-content: start;
         flex-direction: column;
         height: fit-content;
-        width: 15rem;
+        width: 20rem;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
         align-items: center;
         padding: 1rem;
