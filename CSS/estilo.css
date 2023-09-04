@@ -15,6 +15,7 @@
     background-color: #F8BF68;
     border: none;
     border-radius: 5px;
+    padding: 8px;
 }
 .miBtn:hover{
     background-color: #F7B147;
@@ -192,7 +193,13 @@ textarea{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+.tercerFilaPosters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 .posters{
@@ -204,18 +211,36 @@ textarea{
     width: 370px;
     height: 540px;
 }
+.descripcionPeli{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mobile{
+    display: none;
+}
 @media (min-width:0px) and (max-width:1200px) {
     .posters{
-        height: 250px;
-        width: 175px;
-    }
-    .posters:hover{
-        height: 290px;
-        width: 200px;
+        height: 160px;
+        width: 130px;
     }
     .posterPelicula{
-        width: 400px;
+        width: 150px;
         padding: 20px;
+    }
+    .descripcionPeli{
+        display: none;
+    }
+    .posters:hover{
+        display: none;
+    }
+    .contenedorPostersDePeliculas{
+        margin-bottom: 50px;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
     }
 }
 /* FOOTER */
@@ -306,7 +331,7 @@ a{
         justify-content: start;
         flex-direction: column;
         height: fit-content;
-        width: 15rem;
+        width: 20rem;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
         align-items: center;
         padding: 1rem;
