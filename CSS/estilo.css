@@ -1,18 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* NAV BAR */
+
 .background{
     background-color: #CA4A65;
 }
 
 .miBtn{
     background-color: #F8BF68;
+    border: none;
+    border-radius: 5px;
+}
+.miBtn:hover{
+    background-color: #F7B147;
 }
 .logoCinefilos{
-    height: 48px;
+    height: 38px;
+    cursor: pointer;
 }
-.widthInput{
-    width: 32rem;
+.btn{
+    background-color: #fafafa;
+    border: none;
+    border-radius: 5px;
 }
-@media (max-width:768px){
-    .widthInput{
-        width: 1rem;
+
+.birrete{
+    width: 35px;
+    border-radius: 5px;
+    background-color: none;
+    cursor: pointer;
+}
+.birrete:hover{
+    width: 40px;
+    background-color: #F7B147;
+}
+.colorText{
+    color: #fafafa;
+}
+.heightPoster{
+    height: 600px;
+    width: 100%;
+    margin: 0;
+}
+.navbar-collapse{
+    flex-grow: inherit;
+}
+
+.widthForm{
+    width: 65rem;
+}
+
+.image2{
+    display: none;
+ }
+ 
+.estudiante{
+    display: none;
+}
+ 
+ @media only screen and (min-width: 0px) and (max-width: 767px){ 
+    .image1{
+      display: none;
     }
+ 
+    .image2{
+      display: block;
+      width: 38px;
+      cursor: pointer;
+    }
+    .miBtn{
+        background-color: inherit;
+    }
+ }    
+ @media only screen and (max-width: 991px){ 
+    .btn{
+        background-color: inherit;
+        display: block;
+        border: inherit;
+        width: fit-content;
+        border-radius: 2px;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 5px;
+        margin-top: 2px;
+    }
+     .miBtn{
+        background-color: inherit;
+        display: block;
+        border: inherit;
+        width: fit-content;
+        border-radius: 2px;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 7px;
+    }
+    .birrete{
+        display: none;
+    }
+    .estudiante{
+        display: block;
+    }
+    .birreteDesplegable{
+        width: 30px;
+    }
+ }    
+
+ /* CONTENEDOR DE COMENTARIOS */
+.contenedorDeComentarios{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    margin-bottom: 0;
+    overflow-y: scroll;
+    height: 500px;
+    overflow-x: hidden;
+    padding: 0;
+    width: 90%;
+ 
+}
+.fotoUsuario{
+    height: 100px;
+    width: 100px;
+    padding: 0;
+}
+.comentarios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    width: 100%;
+    
+}
+.contenedorPadreComentarios{
+    padding: 0;
+    width: 100%;
+}
+
+
+ @media (min-width:0px) and (max-width:1200px) {
+    .contenedorPadreComentarios{
+        display: none;
+    }
+ }   
+ .cajaComentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    height: fit-content;
+}
+textarea{
+    width: 50%;
+    height: 20%;
+}
+
+/* CAROUSEL */
+
+/* ESTA PORONGA ES LO QUE SIEMPRE TE AGREGA UN SCROLL HORIZONTAL, SINO SEGURO ES EL TEXTO DE ALGUN H2 */
+.row{
+    --bs-gutter-x: 0;
+}
+
+/* POSTERS SERIES Y PELICULAS */
+.contenedorPostersDePeliculas{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.primerFilaPosters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.posterPelicula{
+    padding: 40px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.segundaFilaPosters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.posters{
+    height: 500px;
+    width: 350px;
+}
+.posters:hover{
+    filter: grayscale(60%);
+    width: 370px;
+    height: 540px;
+}
+@media (min-width:0px) and (max-width:1200px) {
+    .posters{
+        height: 250px;
+        width: 175px;
+    }
+    .posters:hover{
+        height: 290px;
+        width: 200px;
+    }
+    .posterPelicula{
+        width: 400px;
+        padding: 20px;
+    }
+}
+/* FOOTER */
+.backgroundFooter{
+    background-color: #CA4A65;
+}
+.colorText{
+    color: #fafafa;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FORMULARIO */
+.contenedorFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    height: fit-content;
+    width: 40rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    padding: 1rem;
+}
+.labelEInput{
+    margin-bottom: 5px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: end;
+    
+}
+.soloInput{
+    padding: 10px;
+    border-radius: 5px;
+} 
+.iniciarSesion{
+    background-color: #CA4A65;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 32px;
+}
+.check{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+} 
+.logoRegistro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registrarme{
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 32px;
+}
+.noRegistrado{ 
+    font-size: 1rem;
+    border-top: black 1px solid;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
 }
