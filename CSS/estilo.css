@@ -201,6 +201,12 @@ textarea{
     justify-content: center;
     flex-wrap: wrap-reverse;
 }
+.tercerFilaPosters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .posters{
     height: 500px;
@@ -230,16 +236,13 @@ textarea{
     .descripcionPeli{
         display: none;
     }
-    .posters:hover{
-        display: none;
-    }
-    .contenedorPostersDePeliculas{
-        margin-bottom: 50px;
-    }
     .mobile{
         display: block;
     }
     .desktop{
+        display: none;
+    }
+    .posters:hover{
         display: none;
     }
 }
